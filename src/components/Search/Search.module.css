@@ -1,0 +1,41 @@
+.searchContainer {
+    width: 219px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    background: #F9FBFF;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.searchContainer img {
+    width: 24px;
+    height: 24px;
+}
+.searchContainer input, input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B5B7C0;
+    border: none;
+    outline: none;
+    background: #F9FBFF;
+    padding-left: 4px;
+    padding-top: 1px;
+    width: 100%;
+}
+.searchContainer input {
+    color: #292D32;
+}
+@media screen and (max-width: 700px) {
+    .searchContainer {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+
+    }
+    .searchContainer input, input::placeholder {
+        font-size: 16px;
+    }
+}

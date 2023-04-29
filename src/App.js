@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import {Provider} from "react-redux";
+import store from "./redux/store";
+import Search from "./components/Search/Search";
+import Table from "./components/Table/Table";
+import s from "./App.module.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = (props) => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearchTerm = (value) => {
+        setSearchTerm(value);
+    }
+
+    return <div className={s.wrapper}>
+        <div className={s.inner}>
+            <div>
+                <h1>All Customers</h1>
+                <span>Active Members</span>
+            </div>
+            <Search searchTerm={searchTerm} handleSearchTerm={handleSearchTerm}/>
+        </div>
+        <Table searchTerm={searchTerm}/>
     </div>
-  );
 }
 
-export default App;
+const ContainerApp = (props) => {
+    return <Provider store={store}>
+        <App/>
+    </Provider>
+}
+export default ContainerApp;
