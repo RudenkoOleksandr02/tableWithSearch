@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//rudenkooleksandr02.github.io/tableWithSearch/static/css/main.666e9795.css",
+    "main.js": "//rudenkooleksandr02.github.io/tableWithSearch/static/js/main.a7dd4eb4.js",
+    "static/js/787.dde20c4c.chunk.js": "//rudenkooleksandr02.github.io/tableWithSearch/static/js/787.dde20c4c.chunk.js",
+    "index.html": "//rudenkooleksandr02.github.io/tableWithSearch/index.html",
+    "main.666e9795.css.map": "//rudenkooleksandr02.github.io/tableWithSearch/static/css/main.666e9795.css.map",
+    "main.a7dd4eb4.js.map": "//rudenkooleksandr02.github.io/tableWithSearch/static/js/main.a7dd4eb4.js.map",
+    "787.dde20c4c.chunk.js.map": "//rudenkooleksandr02.github.io/tableWithSearch/static/js/787.dde20c4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.666e9795.css",
+    "static/js/main.a7dd4eb4.js"
+  ]
+}
